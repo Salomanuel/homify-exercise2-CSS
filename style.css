@@ -63,7 +63,7 @@ ul {
 li { 
 	float: left;
 	list-style-type: none;
-	padding-left: 80px;
+	padding-left: 72px;
 	line-height: 64px; /* same as the ul height */
 	color: white;
 	text-transform: uppercase;
