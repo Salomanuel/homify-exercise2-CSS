@@ -32,6 +32,10 @@
       border-spacing: 0;
     }
 
+body {
+	border-top: 1px solid #caaaaa; /* there is a tiny grey band at the top of the logo */
+}
+
 h2 {
 	float: left;
 	width: 142px;
@@ -43,6 +47,8 @@ h2 span{
 	/* logo trickery */
 	background: url(./logo.png);
 	position: absolute;
+	background-repeat: none;
+	top: -1px; /* there is a tiny grey band at the top of the logo */
 	width: 100%;
 	height: 100%;
 }
@@ -50,25 +56,24 @@ h2 span{
 ul {
 	margin-top: 1px;
 	float: left; 
-	width: (100% - 145px);
+	height: 64px;
 	background-color: #161f2f;
 }
 
 li { 
-	/* bar */
 	float: left;
 	list-style-type: none;
-	padding: 10px;
-	height: 44px;
-
-	/* font */
+	padding-left: 80px;
+	line-height: 64px; /* same as the ul height */
 	color: white;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-family: sans;
+	font-family: roboto, sans; /* yes, I checked the source */
+	vertical-align: middle;
 }
 
 .top-bar {
-	background-color: #161f2f;
+	background-color: #161f2f; 
 	width: 100%;
+	position: fixed;
 }
